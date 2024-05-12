@@ -1,0 +1,474 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 20px; */
+  padding-left: 20px;
+  /* justify-content: center; */
+  /* align-items: end; */
+}
+
+.container {
+  width: unset;
+  height: calc(100vh - 70px);
+  /* position: absolute; */
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.container .top-section {
+  width: 95%;
+  margin-bottom: 1rem;
+}
+
+.refresh-btn {
+  cursor: pointer;
+}
+
+.navbar {
+  padding: 15px 20px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bell-icon {
+  transform: translateY(4px);
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page-popup {
+  padding: 10px 20px;
+  background-color: var(--white-color);
+  color: black;
+  border-radius: 50px;
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  /* margin-top: 10px; */
+  color: var(--white-color);
+}
+
+.project-title {
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main-container {
+  display: flex;
+}
+
+.right-end-section {
+  border-left: 1px solid gray;
+  width: 20%;
+}
+
+.main-container .right-section {
+  width: 65%;
+}
+
+.main-container .left-side {
+  /* padding: 30px 0px; */
+  padding-top: 20px;
+  padding-bottom: 42px;
+  border-right: 1px solid gray;
+  height: calc(100vh - 120px);
+  width: 18%;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.add-project-btn {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.mainCard {
+  /* background-color: rgb(239, 239, 239); */
+  border-radius: 5px;
+  padding-right: 10px;
+  /* height: 400px; */
+  /* width: 97%; */
+  /* width: calc(100% - 30px); */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.taskCard {
+  padding: 10px 0px;
+  /* background-color: white;*/
+  color: var(--white-color);
+  border-bottom: 1px solid #ffffff33;
+  /* margin-bottom: 10px; */
+  /* border-radius: 5px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.createBtn {
+  /* background-color: #007BFF; */
+  /* color: white; */
+  background-color: var(--white-color);
+  border: none;
+  /* margin-right: 10px; */
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 100%;
+  /* Make the button the same height as the container */
+}
+
+.createBtn:hover {
+  background-color: #dadadaac;
+}
+
+.disable {
+  opacity: 0.5;
+}
+
+.textBox {
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  /* width: 200px; */
+  flex-grow: 1;
+  /* text-align: center; */
+  /* Allow the search box to grow and fill the remaining space */
+}
+
+.no-border-textbox {
+  border: none;
+  outline: none;
+  background-color: #f0f0f000;
+  font-size: 16px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  color: var(--white-color);
+}
+
+.line-through-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.popup-card {
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 200px;
+  position: absolute;
+  top: 2%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 10;
+}
+
+
+.login-card h2 {
+  margin-bottom: 10px;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+/* .register-card input[type="text"], */
+.register-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 75%;
+  overflow-y: scroll;
+  /* padding-bottom: 40px; */
+  /* border-bottom: 1px solid white */
+}
+
+.user-card {
+  padding: 5px;
+  border-bottom: 1px solid white;
+  /* border-radius: 5px; */
+  margin-bottom: 10px;
+  /* cursor: pointer; */
+  position: absolute;
+  bottom: 3.5rem;
+  width: calc(100% - 40px);
+
+}
+
+.project-card {
+  padding: 12px 10px;
+  margin-left: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  /* border: 1px solid white; */
+  border: none;
+  margin-right: 10px;
+  color: var(--white-color);
+  border-radius: 5px;
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.482);
+  /* background-color: var(--white-color); */
+  color: black;
+}
+
+.active {
+  /* background-color: white; */
+  background-color: var(--white-color);
+  color: black;
+}
+
+.info-card {
+  /* width: 100%; */
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  font-size: 1rem;
+  border-top: 1px solid gray;
+  font-weight: bold;
+}
+
+.logout-icon-btn {
+  cursor: pointer;
+}
+
+.logout-btn {
+  position: absolute;
+  background-color: var(--white-color);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  width: calc(100% - 40px);
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+}
+
+.logout-btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.716);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: calc(100vh - 57px);
+  /* min-height: 95vh; */
+  background-color: rgba(0, 0, 0, 0.86);
+  /* opacity: 0.7; */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-card {
+  /* min-width: 25rem;
+  border: 1px solid var(--white-color);
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px; */
+}
+
+.dialog-card .form {
+  min-width: 25rem;
+  border: 1px solid var(--white-color);
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.dialog-card h2 {
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+
+.dialog-card input[type="date"] {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--white-color);
+}
+
+.dialog-card input[type="text"] {
+  /* width: 0%; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+
+.dialog-card button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.dialog-card label {
+  margin-bottom: 5px;
+  color: var(--white-color);
+}
+
+.new-project-sreen {
+  min-width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.new-project-sreen h1 {
+  margin-bottom: 10px;
+}
+
+.new-project-sreen a {
+  /* background-color: #007BFF; */
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.new-project-sreen a:hover {
+  color: #004793;
+}
+
+/* fix this */
+.taskCard .right a {
+  cursor: pointer;
+}
+
+.project-status-btn {
+  min-width: 6rem;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.project-delete-btn {
+  /* min-width: 2.7rem; */
+  min-width: 6rem;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  /* transform: scale(1.1); */
+  background-color: white;
+  color: black;
+}
+
+.task-card-bottom {
+  font-size: 13px;
+  color: rgb(171, 171, 171);
+}
+
+.bold-span {
+  color: rgb(177, 177, 177);
+  font-weight: bold;
+}

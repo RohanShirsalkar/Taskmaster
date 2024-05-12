@@ -1,0 +1,47 @@
+.rightend-section-component {
+    padding: 10px 20px;
+}
+
+.rightend-section-component h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    /* margin-bottom: 15px; */
+}
+
+.rightend-section-component span {
+    color: gray;
+}
+
+.rightend-section-component ul {
+    list-style: none;
+}
+
+.rightend-section-component a {
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rightend-section-component .delete-link:hover {
+    color: rgb(162, 36, 36);
+}
+
+.rightend-section-component .changestatus-link:hover {
+    color: blue;
+}
+
+.rightend-section-component .top-card {
+    background-color: rgb(255 255 255 / 21%);
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 300ms ease-out;
+}
+
+.rightend-section-component .top-card span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1;
+}
